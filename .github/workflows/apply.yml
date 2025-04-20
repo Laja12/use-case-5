@@ -1,4 +1,4 @@
-name: open-project
+name: use-case-5
 
 on:
   workflow_dispatch:
