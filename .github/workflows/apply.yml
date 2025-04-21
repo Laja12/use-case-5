@@ -38,6 +38,12 @@ jobs:
       - name: Terraform Lint
         run: tflint
 
+      - name: Install Checkov
+        run: pip install checkov
+
+      - name: Run Checkov with soft fail
+        run: checkov --directory . --soft-fail
+
       - name: Initialize Terraform
         run: terraform init
 
