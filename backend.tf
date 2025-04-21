@@ -1,4 +1,5 @@
 terraform {
+  required_version = ">= 1.0.0"
   backend "s3" {
     bucket = "openproject-bucket1"  # Replace with your unique S3 bucket name
     key    = "path/use-case-5/my-bucket2/statefile/terraform.tfstate"  # Path inside the bucket to store the state
