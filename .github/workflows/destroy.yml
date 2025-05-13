@@ -22,7 +22,7 @@ jobs:
       - name: 'Configure AWS Credentials'
         uses: aws-actions/configure-aws-credentials@v1
         with:
-          role-to-assume: arn:aws:iam::838365449755:role/opend-id-connect
+          role-to-assume: arn:aws:iam::838365449755:role/open-id-connect
           aws-region: us-east-1
  
       - name: 'Terraform Init'
