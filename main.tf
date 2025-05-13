@@ -23,5 +23,5 @@ module "ec2" {
   instance_type  = "t2.micro"
   subnet_id      = module.vpc.subnet_id
   vpc_id         = module.vpc.vpc_id
-  key_name       = "first-key"
+  key_name       = "ssh-key"
 }
